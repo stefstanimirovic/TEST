@@ -1,0 +1,272 @@
+<style>
+  .main {
+    margin: 20px auto 0;
+    font-family: "Samsung Sharp Sans";
+    width: 90%;
+    color: rgb(40, 40, 40);
+    text-align: center;
+  }
+  /* TABS */
+
+  .buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  button {
+    padding: 23px 16px;
+    background-color: #f2f2f2;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+  }
+
+  button.active {
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+
+  .content {
+    display: none;
+    padding: 10px 20px;
+  }
+
+  .content.active {
+    display: block;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .tab {
+    padding: 23px 16px;
+    background-color: #f2f2f2;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+  }
+  .tab.active {
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+  .section.active {
+    display: block;
+  }
+  /* CARDS */
+  .card {
+    background-color: #f8f8f8;
+    padding: 45px;
+    border-radius: 8px;
+    margin: 40px 0;
+  }
+  .card__title {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+  .card__img-container {
+    margin-bottom: 12px;
+  }
+  .card__img {
+    width: 80%;
+  }
+  .color-desc {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .color-desc span {
+    font-weight: normal;
+  }
+  /* COLOR SAMPLES */
+  .color__samples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+  .color__sample {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  .color__sample.active {
+    outline: 3px solid #fff;
+    box-shadow: 0px 0px 1px 4px #000;
+  }
+
+  .color__sample--graphite {
+    background-color: #4e5a61;
+  }
+  .color__sample--black {
+    background-color: #000;
+  }
+  .color__sample--beige {
+    background-color: #d6cdc1;
+  }
+  .color__sample--grey {
+    background-color: #535355;
+  }
+  .color__sample--white {
+    background-color: #efefef;
+  }
+  .color__sample--pink-gold {
+    background-color: #d6cdc1;
+  }
+  .color__sample--blue {
+    background-color: #b0bfd7;
+  }
+  .color__sample--bora-purple {
+    background-color: #b2a1cd;
+  }
+  .color__sample--buds-grey {
+    background-color: #404145;
+  }
+  .color__sample--burgundy {
+    background-color: #664d57;
+  }
+  .color__sample--green {
+    background-color: #587876;
+  }
+  .color__sample--lavender {
+    background-color: #c4bad6;
+  }
+  .color__sample--peach {
+    background-color: #ffd4b2;
+  }
+  .card__additional-text {
+    font-size: 13px;
+    font-weight: bold;
+    /* margin-bottom: 50px; */
+  }
+  .card__btn {
+    border: 1px solid #000;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 26px;
+    border-radius: 16px;
+  }
+  .icon {
+    width: 32px;
+  }
+  /* TRADE IN */
+  .trade-in {
+    border: 1px solid #000;
+    padding: 63px 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .trade-in__text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .trade-in__img {
+    display: none;
+  }
+  .imagePromotion {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card__title__mobile {
+    font-size: 42px;
+  }
+
+  #galaxy-s23-series {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 350px) and (max-width: 768px) {
+    .card__additional-text {
+      margin: 30px 0;
+    }
+    #buttonsOne div a,
+    #buttonsTwo div a {
+      width: 90%;
+      color: white !important;
+      background-color: black !important;
+    }
+    .card__title__mobile {
+      font-size: 32px;
+    }
+  }
+  @media (min-width: 768px) {
+    .buttonWrapper {
+      flex-direction: row;
+      margin-top: 60px;
+    }
+    button {
+      padding: 8px 16px;
+    }
+    .tab-button-small {
+      width: 25%;
+    }
+    .tab-button-large {
+      width: 50%;
+    }
+    .card {
+      height: 653px;
+      width: 277px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .trade-in__img {
+      display: block;
+    }
+  }
+  @media (min-width: 1024px) {
+    button {
+      font-size: 24px;
+      padding: 10px 16px;
+    }
+    .section__title {
+      font-size: 36px;
+    }
+    .section__text {
+      font-size: 24px;
+    }
+
+    .card {
+      border-radius: 17px;
+      top: 1650px;
+      width: 400px;
+      height: 799px;
+    }
+  }
+</style>
+<div class="main">
+  <div class="wrapper">
+    <div class="contentWrapper">
+      <div class="content active" id="contact">
+        <section class="section galaxy-s23-series tab-3" id="galaxy-s23-series">
+          <div class="cards-container">
+            <div class="card">
+              <h3 class="card__title">Galaxy S23</h3>
+              <div class="card__img-container">
+                <img src="/content/dam/samsung/africa_en/offer/ghana-s23-launch-promo/images/GalaxyS23_Front2_Lavender.png" alt="" class="card__img s23image" style="width: 100%" />
+              </div>
+              <div class="color-picker">
+                <h4 class="color-desc">Color : <span class="s23-color color-value">Lavender</span></h4>
+                <div class="color__samples">
+                  <div class="s23-lavender color__sample color__sample--lavender active"></div>
+                  <div class="s23-cream color__sample color__sample--peach"></div>
+                  <div class="s23-black color__sample color__sample--black"></div>
+                  <div class="s23-graphite color__sample color__sample--green"></div>
+                </div>
+                <a href="https://www.samsung.com/africa_en/smartphones/galaxy-s23/" title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button" an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn" cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test!</title>
+  <link rel="stylesheet" href="/search-icon.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="main" id="home">
+    <h1>Search products by names or series:</h1>
+    <header>
+      <form class="example">
+        <input type="text" id="search" placeholder="Search.." name="search">
+        <button type="submit" id="btn"><i class="fa fa-search"></i></button>
+      </form>
+    </header>
+    <div class="sortInputs">
+      <div class="inputs Prices">
+        <label for="sort-by-price">Sort by:</label>
+        <select id="sort-by-price">
+          <option value="" style="color: gray;">Choose a way to sort</option>
+          <option value="high-to-low">High to low</option>
+          <option value="low-to-high">Low to High</option>
+        </select>
+      </div>
+      <div class="inputs colors">
+        <label for="sort-by-color">Color:</label>
+        <select id="sort-by-color">
+          <option value="">Choose color</option>
+          <option value="colors"> </option>
+          <option value="black">Black</option>
+          <option value="cream">Cream</option>
+          <option value="lavender">Lavender</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div class="inputs sim">
+        <label for="sort-by-sim">SIM:</label>
+        <select id="sort-by-sim">
+          <option value="">Choose SIM type</option>
+          <option value="single-sim">Single SIM</option>
+          <option value="dual-sim">Dual SIM</option>
+        </select>
+      </div>
+      <div class="inputs camera">
+        <label for="sort-by-price">Main camera:</label>
+        <select id="sort-by-price">
+          <option value="">Choose camera</option>
+          <option value="more-than-48mp">More than 48MP</option>
+          <option value="s48mp">48MP</option>
+          <option value="less-than-48mp">Less than 48MP</option>
+        </select>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="contentWrapper">
+        <div class="content active" id="contact">
+          <div class="flex" id="flexas">
+            <section class="section galaxy-s23-series tab" id="galaxy-s23-series">
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy S23 ultra</h3>
+                  <div class="card__img-container">
+                    <img src="GalaxyS23Ultra_Lavender.png" alt="" class="card__img s23image" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="s23-color color-value">Green</span></h4>
+                    <div class="color__samples">
+                      <div class="s23-lavender color__sample color__sample--lavender "></div>
+                      <div class="s23-cream color__sample color__sample--peach"></div>
+                      <div class="s23-black color__sample color__sample--black"></div>
+                      <div class="s23-graphite color__sample color__sample--green active"></div>
+                    </div>
+                    <!--CITAJ IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-s23/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy S23</h3>
+                  <div class="card__img-container">
+                    <img src="GalaxyS23_Lavender.png" alt="" class="card__img s23image" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="s23-color color-value">Lavender</span></h4>
+                    <div class="color__samples">
+                      <div class="s23-lavender color__sample color__sample--lavender active"></div>
+                      <div class="s23-cream color__sample color__sample--peach"></div>
+                      <div class="s23-black color__sample color__sample--black"></div>
+                      <div class="s23-graphite color__sample color__sample--green"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-s23/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy S23 plus</h3>
+                  <div class="card__img-container">
+                    <img src="GalaxyS23Plus_Lavender.png" alt="" class="card__img s23image" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="s23-color color-value">Cream</span></h4>
+                    <div class="color__samples">
+                      <div class="s23-lavender color__sample color__sample--lavender"></div>
+                      <div class="s23-cream color__sample color__sample--peach active"></div>
+                      <div class="s23-black color__sample color__sample--black"></div>
+                      <div class="s23-graphite color__sample color__sample--green"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-s23/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section galaxy-a-series tab " id="galaxy-a-series">
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy A04</h3>
+                  <div class="card__img-container">
+                    <img src="GalaxyA04_DeepGreen.png" alt="" class="card__img aimage" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="a-color color-value">Deep Green</span></h4>
+                    <div class="color__samples">
+                      <div class="s23-black color__sample color__sample--black"></div>
+                      <div class="s23-graphite color__sample color__sample--green active"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-A-series/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy A04e</h3>
+                  <div class="card__img-container">
+                    <img src="GalaxyA04e_LightBlue.png" alt="" class="card__img s23image" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="s23-color color-value">Light-blue</span></h4>
+                    <div class="color__samples">
+                      <div class="s23-light-blue color__sample color__sample--light-blue"></div>
+                      <div class="s23-black color__sample color__sample--black"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-A-series/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy A14</h3>
+                  <div class="card__img-container">
+                    <img src="GalaxyA14_Black.png" alt="" class="card__img s23image" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="s23-color color-value">Black</span></h4>
+                    <div class="color__samples">
+                      <div class="s23-black color__sample color__sample--black active"></div>
+                      <div class="s23-graphite color__sample color__sample--green"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-A-series/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section galaxy-z-series tab hidden1" id="galaxy-z-series">
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy Z-Fold4</h3>
+                  <div class="card__img-container">
+                    <img src="Z-Fold4-Black.png" alt="" class="card__img aimage" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="a-color color-value">Phantom Black</span></h4>
+                    <div class="color__samples">
+                      <div class="Z-Fold4-beige color__sample color__sample--beige"></div>
+                      <div class="Z-Fold4-black color__sample color__sample--black active"></div>
+                      <div class="Z-Fold4-gray green color__sample color__sample--gray green"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="series"></div>
+                    <div class="mainCamera"></div>
+                    <div class="sim"></div>
+                    <div class="price"></div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-z-series/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-container hidden">
+                <div class="card">
+                  <h3 class="card__title">Galaxy Z-Flip4 </h3>
+                  <div class="card__img-container">
+                    <img src="Z-Flip4-BoraPurple.png" alt="" class="card__img s23image" style="width: 100%" />
+                  </div>
+                  <div class="color-picker">
+                    <h4 class="color-desc">Color : <span class="s23-color color-value">Bora Purple</span></h4>
+                    <div class="color__samples">
+                      <div class="Z-Fold4-blue color__sample color__sample--blue"></div>
+                      <div class="Z-Fold4-bora purple color__sample color__sample--bora-purple active"></div>
+                      <div class="Z-Fold4-graphite color__sample color__sample--graphite"></div>
+                      <div class="Z-Fold4-pink gold color__sample color__sample--pink-gold"></div>
+                    </div>
+                    <!--NABAVI IZ EXCELA PODATKE OVDE-->
+                    <div class="data">
+                      <div class="series"></div>
+                      <div class="mainCamera"></div>
+                      <div class="sim"></div>
+                      <div class="price"></div>
+                    </div>
+                    <a href="https://www.samsung.com/africa_en/smartphones/galaxy-Z-series/"
+                      title="Learn More about Galaxy S23" an-tr="co30_button-flagship pdp-cta-button"
+                      an-ca="content click" an-ac="feature" an-la="button:galaxy s23 learn more cta" class="card__btn"
+                      cid="https://www.samsung.com/africa_en/smartphones/galaxy-s23/?cid=africa_ow_app_dotcom_galaxy-s23-series_pre-order_galaxy-s23-series_other_s23-cta_ghana">Learn
+                      more</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!--<button type="button" id="loadMore">Load More</button>*/-->
+        </div>
+        <a href="#home"><img src="arrow.svg" style="height:50px;width:50px;float: right;"></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
